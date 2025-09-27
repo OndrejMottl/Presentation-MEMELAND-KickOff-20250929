@@ -1,64 +1,658 @@
 // This file is auto-generated from colors.json. Do not edit directly.
-$black: #000000ff;
-.reveal .bg-black { background-color: #000000ff; }
-.text-color-black { color: #000000ff; }
-.text-background-black {
-background-color: #000000ff;
-padding: $smallMargin;
-border-radius: 5px;
- }
 
-$white: #ffffffff;
-.reveal .bg-white { background-color: #ffffffff; }
-.text-color-white { color: #ffffffff; }
+// ==============================================================================
+// PRIMARY COLORS - Core brand palette
+// ==============================================================================
+$white: #F2F4F2;
+$black: #1F2937;
+$dark_green: #002A28;
+$teal: #00857E;
+$pistachio: #87BF79;
+$fulvous: #D47F14;
+$seal_brown: #641F03;
+
+// ==============================================================================
+// CONTRAST COLORS - For text contrast calculations
+// ==============================================================================
+$contrastColorLight: $black;
+$contrastColorDark: $white;
+
+// ==============================================================================
+// UI COLORS - Basic user interface elements
+// ==============================================================================
+$bodyColor: $black;
+$bodyBackground: $white;
+$backgroundColor: $white;
+$headingColor: $dark_green;
+$linkColor: $fulvous;
+$linkHoverColor: $fulvous;
+$accentColor: $fulvous;
+$selectionBackground: $pistachio;
+$selectionColor: $black;
+
+// HTML-specific UI variables for compatibility
+$body-color: $bodyColor;
+$body-bg: $backgroundColor;
+$headingColor: $headingColor;
+$link-color: $linkColor;
+$selection-bg: $selectionBackground;
+$accent-color: $accentColor;
+$link-hover-color: darken($linkHoverColor, 15%);
+
+// ==============================================================================
+// COMPONENT COLORS - Specific component styling
+// ==============================================================================
+$codeColor: $black;
+$codeBackgroundColor: $white;
+$lightCodeBackground: $white;
+$codeBlockBackground: $white;
+$tableHeaderBackground: $dark_green;
+$tableHeaderColor: $white;
+$tableBorderColor: $black;
+$tableStripeBackground: $white;
+$tableStripeAlternate: $teal;
+$blockquoteBackground: $white;
+$blockquoteBorderColor: $dark_green;
+$blockquoteBackgroundTint: $teal;
+$shadowBackground: $white;
+
+// Component-specific compatibility variables
+$code-color: $codeColor;
+
+// ==============================================================================
+// UTILITY CLASSES - CSS classes for primary colors
+// ==============================================================================
+// Primary color: white
+.reveal .bg-white { background-color: #F2F4F2; }
+.text-color-white { color: #F2F4F2 !important; }
 .text-background-white {
-background-color: #ffffffff;
-padding: $smallMargin;
-border-radius: 5px;
- }
+  background-color: #F2F4F2;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-white {
+  background-color: #F2F4F2;
+  color: $contrastColorLight;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
 
-$grey: #808080ff;
-.reveal .bg-grey { background-color: #808080ff; }
-.text-color-grey { color: #808080ff; }
-.text-background-grey {
-background-color: #808080ff;
-padding: $smallMargin;
-border-radius: 5px;
- }
+// Primary color: black
+.reveal .bg-black { background-color: #1F2937; }
+.text-color-black { color: #1F2937 !important; }
+.text-background-black {
+  background-color: #1F2937;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-black {
+  background-color: #1F2937;
+  color: $contrastColorDark;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
 
-$byzantium: #8f286fff;
-.reveal .bg-byzantium { background-color: #8f286fff; }
-.text-color-byzantium { color: #8f286fff; }
-.text-background-byzantium {
-background-color: #8f286fff;
-padding: $smallMargin;
-border-radius: 5px;
- }
+// Primary color: dark_green
+.reveal .bg-dark_green { background-color: #002A28; }
+.text-color-dark_green { color: #002A28 !important; }
+.text-background-dark_green {
+  background-color: #002A28;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-dark_green {
+  background-color: #002A28;
+  color: $contrastColorDark;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
 
-$harvest-gold: #eca400ff;
-.reveal .bg-harvest-gold { background-color: #eca400ff; }
-.text-color-harvest-gold { color: #eca400ff; }
-.text-background-harvest-gold {
-background-color: #eca400ff;
-padding: $smallMargin;
-border-radius: 5px;
- }
+// Primary color: teal
+.reveal .bg-teal { background-color: #00857E; }
+.text-color-teal { color: #00857E !important; }
+.text-background-teal {
+  background-color: #00857E;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-teal {
+  background-color: #00857E;
+  color: $contrastColorDark;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
 
-$persian-green: #1b998bff;
-.reveal .bg-persian-green { background-color: #1b998bff; }
-.text-color-persian-green { color: #1b998bff; }
-.text-background-persian-green {
-background-color: #1b998bff;
-padding: $smallMargin;
-border-radius: 5px;
- }
+// Primary color: pistachio
+.reveal .bg-pistachio { background-color: #87BF79; }
+.text-color-pistachio { color: #87BF79 !important; }
+.text-background-pistachio {
+  background-color: #87BF79;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-pistachio {
+  background-color: #87BF79;
+  color: $contrastColorLight;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
 
-$cerulean: #006992ff;
-.reveal .bg-cerulean { background-color: #006992ff; }
-.text-color-cerulean { color: #006992ff; }
-.text-background-cerulean {
-background-color: #006992ff;
-padding: $smallMargin;
-border-radius: 5px;
- }
+// Primary color: fulvous
+.reveal .bg-fulvous { background-color: #D47F14; }
+.text-color-fulvous { color: #D47F14 !important; }
+.text-background-fulvous {
+  background-color: #D47F14;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-fulvous {
+  background-color: #D47F14;
+  color: $contrastColorLight;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Primary color: seal_brown
+.reveal .bg-seal_brown { background-color: #641F03; }
+.text-color-seal_brown { color: #641F03 !important; }
+.text-background-seal_brown {
+  background-color: #641F03;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-seal_brown {
+  background-color: #641F03;
+  color: $contrastColorDark;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+
+// Semantic utility classes
+.text-color-body { color: $bodyColor !important; }
+.text-color-background { color: $backgroundColor !important; }
+.text-color-heading { color: $headingColor !important; }
+.text-color-link { color: $linkColor !important; }
+.text-color-accent { color: $accentColor !important; }
+
+// ==============================================================================
+// UTILITY COLOR VARIABLES - Additional semantic color mappings
+// ==============================================================================
+$contrastColorLight: $black;
+$contrastColorDark: $white;
+$utilityDarkGreen: $dark_green;
+$utilityTeal: $teal;
+$utilityPistachio: $pistachio;
+$utilitySealBrown: $seal_brown;
+$utilityFulvous: $fulvous;
+$utilityBlack: $black;
+$utilityWhite: $white;
+
+// ==============================================================================
+// SPECIALIZED COLOR CLASSES - CSS classes for semantic colors
+// ==============================================================================
+// Semantic color: bodyColor
+.reveal .bg-bodyColor { background-color: #1F2937; }
+.text-color-bodyColor { color: #1F2937 !important; }
+.text-background-bodyColor {
+  background-color: #1F2937;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-bodyColor {
+  background-color: #1F2937;
+  color: $contrastColorDark;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: bodyBackground
+.reveal .bg-bodyBackground { background-color: #F2F4F2; }
+.text-color-bodyBackground { color: #F2F4F2 !important; }
+.text-background-bodyBackground {
+  background-color: #F2F4F2;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-bodyBackground {
+  background-color: #F2F4F2;
+  color: $contrastColorLight;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: backgroundColor
+.reveal .bg-backgroundColor { background-color: #F2F4F2; }
+.text-color-backgroundColor { color: #F2F4F2 !important; }
+.text-background-backgroundColor {
+  background-color: #F2F4F2;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-backgroundColor {
+  background-color: #F2F4F2;
+  color: $contrastColorLight;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: headingColor
+.reveal .bg-headingColor { background-color: #002A28; }
+.text-color-headingColor { color: #002A28 !important; }
+.text-background-headingColor {
+  background-color: #002A28;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-headingColor {
+  background-color: #002A28;
+  color: $contrastColorDark;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: linkColor
+.reveal .bg-linkColor { background-color: #D47F14; }
+.text-color-linkColor { color: #D47F14 !important; }
+.text-background-linkColor {
+  background-color: #D47F14;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-linkColor {
+  background-color: #D47F14;
+  color: $contrastColorLight;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: linkHoverColor
+.reveal .bg-linkHoverColor { background-color: #D47F14; }
+.text-color-linkHoverColor { color: #D47F14 !important; }
+.text-background-linkHoverColor {
+  background-color: #D47F14;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-linkHoverColor {
+  background-color: #D47F14;
+  color: $contrastColorLight;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: accentColor
+.reveal .bg-accentColor { background-color: #D47F14; }
+.text-color-accentColor { color: #D47F14 !important; }
+.text-background-accentColor {
+  background-color: #D47F14;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-accentColor {
+  background-color: #D47F14;
+  color: $contrastColorLight;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: selectionBackground
+.reveal .bg-selectionBackground { background-color: #87BF79; }
+.text-color-selectionBackground { color: #87BF79 !important; }
+.text-background-selectionBackground {
+  background-color: #87BF79;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-selectionBackground {
+  background-color: #87BF79;
+  color: $contrastColorLight;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: selectionColor
+.reveal .bg-selectionColor { background-color: #1F2937; }
+.text-color-selectionColor { color: #1F2937 !important; }
+.text-background-selectionColor {
+  background-color: #1F2937;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-selectionColor {
+  background-color: #1F2937;
+  color: $contrastColorDark;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: codeColor
+.reveal .bg-codeColor { background-color: #1F2937; }
+.text-color-codeColor { color: #1F2937 !important; }
+.text-background-codeColor {
+  background-color: #1F2937;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-codeColor {
+  background-color: #1F2937;
+  color: $contrastColorDark;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: codeBackgroundColor
+.reveal .bg-codeBackgroundColor { background-color: #F2F4F2; }
+.text-color-codeBackgroundColor { color: #F2F4F2 !important; }
+.text-background-codeBackgroundColor {
+  background-color: #F2F4F2;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-codeBackgroundColor {
+  background-color: #F2F4F2;
+  color: $contrastColorLight;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: lightCodeBackground
+.reveal .bg-lightCodeBackground { background-color: #F2F4F2; }
+.text-color-lightCodeBackground { color: #F2F4F2 !important; }
+.text-background-lightCodeBackground {
+  background-color: #F2F4F2;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-lightCodeBackground {
+  background-color: #F2F4F2;
+  color: $contrastColorLight;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: codeBlockBackground
+.reveal .bg-codeBlockBackground { background-color: #F2F4F2; }
+.text-color-codeBlockBackground { color: #F2F4F2 !important; }
+.text-background-codeBlockBackground {
+  background-color: #F2F4F2;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-codeBlockBackground {
+  background-color: #F2F4F2;
+  color: $contrastColorLight;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: tableHeaderBackground
+.reveal .bg-tableHeaderBackground { background-color: #002A28; }
+.text-color-tableHeaderBackground { color: #002A28 !important; }
+.text-background-tableHeaderBackground {
+  background-color: #002A28;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-tableHeaderBackground {
+  background-color: #002A28;
+  color: $contrastColorDark;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: tableHeaderColor
+.reveal .bg-tableHeaderColor { background-color: #F2F4F2; }
+.text-color-tableHeaderColor { color: #F2F4F2 !important; }
+.text-background-tableHeaderColor {
+  background-color: #F2F4F2;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-tableHeaderColor {
+  background-color: #F2F4F2;
+  color: $contrastColorLight;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: tableBorderColor
+.reveal .bg-tableBorderColor { background-color: #1F2937; }
+.text-color-tableBorderColor { color: #1F2937 !important; }
+.text-background-tableBorderColor {
+  background-color: #1F2937;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-tableBorderColor {
+  background-color: #1F2937;
+  color: $contrastColorDark;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: tableStripeBackground
+.reveal .bg-tableStripeBackground { background-color: #F2F4F2; }
+.text-color-tableStripeBackground { color: #F2F4F2 !important; }
+.text-background-tableStripeBackground {
+  background-color: #F2F4F2;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-tableStripeBackground {
+  background-color: #F2F4F2;
+  color: $contrastColorLight;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: tableStripeAlternate
+.reveal .bg-tableStripeAlternate { background-color: #00857E; }
+.text-color-tableStripeAlternate { color: #00857E !important; }
+.text-background-tableStripeAlternate {
+  background-color: #00857E;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-tableStripeAlternate {
+  background-color: #00857E;
+  color: $contrastColorDark;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: blockquoteBackground
+.reveal .bg-blockquoteBackground { background-color: #F2F4F2; }
+.text-color-blockquoteBackground { color: #F2F4F2 !important; }
+.text-background-blockquoteBackground {
+  background-color: #F2F4F2;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-blockquoteBackground {
+  background-color: #F2F4F2;
+  color: $contrastColorLight;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: blockquoteBorderColor
+.reveal .bg-blockquoteBorderColor { background-color: #002A28; }
+.text-color-blockquoteBorderColor { color: #002A28 !important; }
+.text-background-blockquoteBorderColor {
+  background-color: #002A28;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-blockquoteBorderColor {
+  background-color: #002A28;
+  color: $contrastColorDark;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: blockquoteBackgroundTint
+.reveal .bg-blockquoteBackgroundTint { background-color: #00857E; }
+.text-color-blockquoteBackgroundTint { color: #00857E !important; }
+.text-background-blockquoteBackgroundTint {
+  background-color: #00857E;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-blockquoteBackgroundTint {
+  background-color: #00857E;
+  color: $contrastColorDark;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: shadowBackground
+.reveal .bg-shadowBackground { background-color: #F2F4F2; }
+.text-color-shadowBackground { color: #F2F4F2 !important; }
+.text-background-shadowBackground {
+  background-color: #F2F4F2;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-shadowBackground {
+  background-color: #F2F4F2;
+  color: $contrastColorLight;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: contrastColorLight
+.reveal .bg-contrastColorLight { background-color: #1F2937; }
+.text-color-contrastColorLight { color: #1F2937 !important; }
+.text-background-contrastColorLight {
+  background-color: #1F2937;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-contrastColorLight {
+  background-color: #1F2937;
+  color: $contrastColorDark;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: contrastColorDark
+.reveal .bg-contrastColorDark { background-color: #F2F4F2; }
+.text-color-contrastColorDark { color: #F2F4F2 !important; }
+.text-background-contrastColorDark {
+  background-color: #F2F4F2;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-contrastColorDark {
+  background-color: #F2F4F2;
+  color: $contrastColorLight;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: utilityDarkGreen
+.reveal .bg-utilityDarkGreen { background-color: #002A28; }
+.text-color-utilityDarkGreen { color: #002A28 !important; }
+.text-background-utilityDarkGreen {
+  background-color: #002A28;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-utilityDarkGreen {
+  background-color: #002A28;
+  color: $contrastColorDark;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: utilityTeal
+.reveal .bg-utilityTeal { background-color: #00857E; }
+.text-color-utilityTeal { color: #00857E !important; }
+.text-background-utilityTeal {
+  background-color: #00857E;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-utilityTeal {
+  background-color: #00857E;
+  color: $contrastColorDark;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: utilityPistachio
+.reveal .bg-utilityPistachio { background-color: #87BF79; }
+.text-color-utilityPistachio { color: #87BF79 !important; }
+.text-background-utilityPistachio {
+  background-color: #87BF79;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-utilityPistachio {
+  background-color: #87BF79;
+  color: $contrastColorLight;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: utilitySealBrown
+.reveal .bg-utilitySealBrown { background-color: #641F03; }
+.text-color-utilitySealBrown { color: #641F03 !important; }
+.text-background-utilitySealBrown {
+  background-color: #641F03;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-utilitySealBrown {
+  background-color: #641F03;
+  color: $contrastColorDark;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: utilityFulvous
+.reveal .bg-utilityFulvous { background-color: #D47F14; }
+.text-color-utilityFulvous { color: #D47F14 !important; }
+.text-background-utilityFulvous {
+  background-color: #D47F14;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-utilityFulvous {
+  background-color: #D47F14;
+  color: $contrastColorLight;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: utilityBlack
+.reveal .bg-utilityBlack { background-color: #1F2937; }
+.text-color-utilityBlack { color: #1F2937 !important; }
+.text-background-utilityBlack {
+  background-color: #1F2937;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-utilityBlack {
+  background-color: #1F2937;
+  color: $contrastColorDark;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+// Semantic color: utilityWhite
+.reveal .bg-utilityWhite { background-color: #F2F4F2; }
+.text-color-utilityWhite { color: #F2F4F2 !important; }
+.text-background-utilityWhite {
+  background-color: #F2F4F2;
+  padding: $smallMargin;
+  border-radius: 5px;
+}
+.text-highlight-utilityWhite {
+  background-color: #F2F4F2;
+  color: $contrastColorLight;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
 
