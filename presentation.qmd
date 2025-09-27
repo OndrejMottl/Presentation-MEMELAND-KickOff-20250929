@@ -1,4 +1,4 @@
-<!--- Slide 0 Title Slide --->
+<!--- Title Slide --->
 
 ```{r}
 #| label: setup
@@ -62,8 +62,8 @@ slides_url <-
 ::: {.column width="20%"}
 
 ```{r}
-#| label: loqe-logo-title
-include_local_figure("Logos/LoQE_logo.png")
+#| label: personal sticker
+include_local_figure("About/personal_sticker.png")
 ```
 
 :::
@@ -97,7 +97,7 @@ Scientific profile of Ondřej Mottl
 :::
 
 ::: {.column width="80%" .text-right .text-size-body}
-[👤](https://ondrejmottl.github.io/)Ondřej Mottl
+[👤](https://ondrejmottl.github.io/) Ondřej Mottl
 
 [MEMELAND Kick-Off 2025]{.text-highlight-pistachio}
 
@@ -105,7 +105,7 @@ Scientific profile of Ondřej Mottl
 
 ::::
 
-<!--- Slide 1 This presentation --->
+<!--- This presentation --->
 
 ## [This presentation]{.text-color-white} {.title}
 
@@ -149,8 +149,771 @@ include_local_figure("QR/qr_slides.svg")
 Scan to follow along!
 :::
 
+<!--- FOCUS --->
 
-<!--- Slide 10: Closing--->
+## Research Focus & Tools {.text-center}
+
+<br>
+<br>
+
+:::: {.columns}
+
+::: {.column width="30%" .fragment}
+#### [Biodiversity patterns]{.text-highlight-dark_green} across scales
+
+```{r}
+#| label: biodiversity-patterns
+include_local_figure("AI_generated/biodiversity_nobg.png")
+```
+
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%" .fragment}
+#### [Big data]{.text-highlight-teal} & [methods advancement]{.text-highlight-teal}
+
+```{r}
+#| label: big-data
+include_local_figure("AI_generated/big_data_nobg.png")
+```
+
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="30%" .fragment}
+#### [Open Science]{.text-highlight-pistachio} & [reproducibility]{.text-highlight-pistachio}
+
+```{r}
+#| label: open-science
+include_local_figure("AI_generated/open_science_nobg.png")
+```
+
+:::
+
+::::
+
+::: {.footer}
+Images created by OpenAI GPT-5
+:::
+
+<!--- HOPE --->
+
+# Humans on Planet Earth
+
+<br>
+
+:::: {.columns}
+::: {.column width="75%"}
+
+[HOPE]{.text-highlight-dark_green}: *Long-term impacts on biosphere dynamics* 
+
+-  a European Research Council Advanced Grant project 
+-  from 1 January 2018 to the end of 2023 (5.5-year)
+
+:::
+
+::: {.column width="25%" .text-right}
+
+```{r}
+#| label: hope-logo-1
+include_local_figure("Logos/hope_logo.gif")
+```
+
+:::
+::::
+
+## HOPE team
+
+```{r}
+#| label: make all crop circles
+#| echo: false
+#| results: false
+
+# John Birks
+cropcircles::crop_circle(
+  images = "https://upload.wikimedia.org/wikipedia/commons/2/27/Portrait_of_John_Birks_in_front_of_a_bookcase.jpg",
+  to = here::here(
+    "Materials",
+    "Hope_team",
+    "john_birks.jpg"
+  )
+  )
+
+# John-Arvid Grytnes
+cropcircles::crop_circle(
+  images = "https://mountainsinmotion.w.uib.no/files/2022/04/Grytnes_cropped100-300x300.png",
+  to = here::here(
+    "Materials",
+    "Hope_team",
+    "john_arvid_grytnes.jpg"
+  )
+)
+
+# Hilary Birks
+cropcircles::crop_circle(
+  images = "https://rse.org.uk/wp-content/uploads/2024/06/Hilary_Birks_0f03d69ebbc53e1b2d33545c0c5645f1-600x600.jpg",
+  to = here::here(
+    "Materials",
+    "Hope_team",
+    "hilary_birks.jpg"
+  )
+)
+
+# Alistair Seddon
+cropcircles::crop_circle(
+  images = "https://bjerknessenteret-staging.ams3.digitaloceanspaces.com/people/picture-933-1473843470.gif",
+  to = here::here(
+    "Materials",
+    "Hope_team",
+    "alistair_seddon.jpg"
+  )
+)
+
+# Suzette Flantua
+cropcircles::crop_circle(
+  images = "https://sflantua.github.io/profile_flantua.jpg",
+  to = here::here(
+    "Materials",
+    "Hope_team",
+    "suzette_flantua.jpg"
+  )
+)
+
+# Kuber Bhata
+cropcircles::crop_circle(
+  images = "https://0.academia-photos.com/6921283/9757041/10957082/s200_kuber.bhatta.jpg",
+  to = here::here(
+    "Materials",
+    "Hope_team",
+    "kuber_bhata.jpg"
+  )
+)
+
+# Ondřej Mottl
+cropcircles::crop_circle(
+  images = here::here(
+    "Materials",
+    "About",
+    "ondrej_mottl.jpg"
+  ),
+  to = here::here(
+    "Materials",
+    "Hope_team",
+    "ondrej_mottl.jpg"
+  )
+)
+
+# Vivian Felde
+cropcircles::crop_circle(
+  images = "https://bjerknessenteret-staging.ams3.digitaloceanspaces.com/people/Felde_web.gif",
+  to = here::here(
+    "Materials",
+    "Hope_team",
+    "vivian_felde.jpg"
+  )
+)
+```
+
+:::: {.columns .text-center .text-smaller}
+
+::: {.column width="25%"}
+
+```{r}
+#| label: john
+include_local_figure("Hope_team/john_birks.jpg")
+```
+
+John Birks
+
+```{r}
+#| label: Suzette
+include_local_figure("Hope_team/suzette_flantua.jpg")
+```
+
+Suzette Flantua
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+#| label: john arvid
+include_local_figure("Hope_team/john_arvid_grytnes.jpg")
+```
+
+John-Arvid Grytnes
+
+
+```{r}
+#| label: kuber
+include_local_figure("Hope_team/kuber_bhata.jpg")
+```
+
+Kuber Bhata
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+#| label: hilary
+include_local_figure("Hope_team/hilary_birks.jpg")
+```
+
+Hilary Birks
+
+```{r}
+#| label: ondrej
+include_local_figure("Hope_team/ondrej_mottl.jpg")
+```
+
+Ondřej Mottl
+
+:::
+
+::: {.column width="25%"}
+```{r}
+#| label: alistair
+include_local_figure("Hope_team/alistair_seddon.jpg")
+```
+
+Alistair Seddon
+
+```{r}
+#| label: vivian
+include_local_figure("Hope_team/vivian_felde.jpg")
+```
+
+Vivian Felde
+
+:::
+
+::::
+
+
+<!--- FOSSILPOL --->
+
+## FOSSILPOL
+
+:::: {.columns}
+
+::: {.column width = "50%"}
+```{r}
+#| label: fossilpol_logo_2
+include_local_figure("Logos/FOSSILPOL_logo_600ppi.png")
+```
+:::
+
+::: {.column width = "50%" .center-vertical .text-larger .text-center}
+The workflow to process global [palaeoecological data]{.text-highlight-seal_brown} of fossil pollen for [vegetation]{.text-highlight-dark_green}-based [macroecological]{.text-highlight-teal} [synthesis]{.text-highlight-pistachio}
+:::
+
+::::
+
+## The FOSSILPOL workflow
+
+<br>
+
+```{r}
+#| label: workflow full
+#| out.height: 100%
+#| out.width: NULL
+include_local_figure("Schematics/workflow_full.png")
+```
+
+::: {.footer}
+Artwork by Milan Teunissen van Manen (@MilanTvM).
+:::
+
+
+## The FOSSILPOL workflow
+
+:::: {.columns}
+
+::: {.column width="75%" .fragment}
+
+<br>
+
+- Handles all the steps and flags places where the [user]{.text-highlight-teal} needs to specify their [choices]{.text-highlight-pistachio}
+:::
+
+::: {.column width="25%"}
+
+```{r}
+#| label: qr_fossilpol
+qr_fossilpol <-
+  qrcode::qr_code(
+    "https://bit.ly/FOSSILPOL",
+    ecl = "H"
+  )
+
+qrcode::generate_svg(
+  qrcode = qr_fossilpol,
+  filename = here::here("Materials/QR/qr_fossilpol.svg"),
+  foreground = loqe_cols['dark_green'],
+  background = loqe_cols['white']
+)
+
+include_local_figure("QR/qr_fossilpol.svg")
+```
+
+:::
+
+::::
+
+:::: {.columns .fragment}
+
+::: {.column width="60%"}
+- '*A guide to the processing and standardisation of global palaeoecological data for large-scale syntheses using fossil pollen*' (GEB 2023)
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="35%"}
+
+```{r}
+#| label: gep_certificate
+include_local_figure("Printscreens/GEB_certifiate.png")
+```
+:::
+
+::::
+
+
+<!--- RoC --->
+
+## Rate of Vegetation Change (RoC)
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="25%"}
+
+```{r}
+#| label: rratepol_logo
+include_local_figure("Logos/RRatepol_logo.png")
+```
+
+:::
+
+::: {.column width="75%" .incremental}
+- A robust R package to calculate the [Rate of Change (RoC)]{.text-highlight-seal_brown} in [palaeoecological]{.text-highlight-seal_brown} time series
+- incorporates age uncertainties, standardisation of taxonomic richness, and multivariate dissimilarity coefficients
+
+:::
+
+::::
+
+## Rate of Vegetation Change (RoC)
+
+```{r}
+#| label: science 1
+include_local_figure("RoC/Figure1.jpeg")
+```
+
+_[Mottl, O.]{.text-highlight-black .bold} & Flantua, S.G.A._, Bhatta K.B., Felde, V.A., Giesecke, T., Goring, S., Grimm, E.C., Haberle, S., Hooghiemstra H., Ivory, S., Kuneš, P., Wolters, S., Seddon A.W.R, Williams J.W. (2021), [Global acceleration in rates of vegetation change over the past 18,000 years]{.text-highlight-teal .italic}. **Science** 372: 860-864.
+
+## Rate of Vegetation Change (RoC)
+
+```{r}
+#| label: science 2
+include_local_figure("RoC/Figure2.jpeg")
+```
+
+
+
+## Rate of Vegetation Change (RoC)
+
+<br>
+
+::: {.incremental}
+
+- Rates of vegetation change during the Late Holocene are now as fast or faster than during the Last Deglaciation
+- The start of the increased global rates of vegetation change is surprisingly early, about 3000-4000 years ago
+- Ecosystem turnover rates have been rapidly accelerating over the last century, so our work suggests that modern acceleration is just the tip of the iceberg
+- This is the first quantitative detection analysis of global biodiversity changes over the last 18,000 years, based on 1181 records from the Neotoma 
+   + an amazing global community of scientists working together!
+
+:::
+
+<!--- BIODYNAMICS --->
+
+# BIODYNAMICS
+
+:::: {.columns}
+
+::: {.column width="25%"}
+
+```{r}
+#| label: biodynamics-logo
+include_local_figure("Logos/logo_BIODYNAMICS.png")
+```
+
+:::
+
+::: {.column width="75%" .text-left}
+
+<br>
+<br>
+
+Spatio-temporal dynamics of biotic interactions during the [Holocene]{.text-highlight-seal_brown}
+
+:::
+
+::::
+
+[PI]{.text-highlight-fulvous} | 2023–2027 
+
+Funded by the [Czech Science Foundation (GAČR)](https://gacr.cz/en/)
+
+## VegVault
+
+:::::: {.columns}
+
+::::: {.column width="50%"}
+
+```{r}
+#| label: VegVault logo
+include_local_figure("Logos/VegVault_logo.png")
+```
+
+:::::
+
+::::: {.column width="50%" .incremental}
+
+* A global SQLite database linking [interdisciplinary]{.text-highlight-black .text-color-white .text-bold} **plot-based** vegetation data! 
+* Links to functional [traits]{.text-highlight-teal}, [climate]{.text-highlight-dark_green} variables, and soil properties 
+* Built for exploring **biodiversity** dynamics across [time & space]{.text-highlight-seal_brown}
+* Open Source & [Reproducible]{.text-highlight-pistachio}
+* 🔗Learn more: [bit.ly/VegVault](https://bit.ly/VegVault)
+
+:::: {.columns}
+
+::: {.column width="30%"}
+:::
+
+::: {.column width="40%"}
+
+```{r}
+#| label: vegvault_qr_code
+qr_vegvault <-
+  qrcode::qr_code(
+    "https://bit.ly/VegVault",
+    ecl = "H"
+  )
+
+qrcode::generate_svg(
+  qrcode = qr_vegvault,
+  file = here::here("Materials/QR/qr_vegvault.svg"),
+  foreground = loqe_cols['black'],
+  background = loqe_cols['white']
+)
+
+include_local_figure("QR/qr_vegvault.svg")
+```
+
+:::
+
+::: {.column width="30%"}
+:::
+
+::::
+
+:::::
+
+::::::
+
+
+## VegVault
+
+~110 GB | 32 tables & 87 variables | 480,000+ Datasets | 13M+ Samples | 110,000+ Taxa | 11M+ Trait values | 8 Abiotic variables
+
+:::: {.columns .fragment}
+
+#### Data sources 
+
+::: {.column width="40%" .incremental}
+
+- 🌿 [Paleoecological records]{.text-highlight-seal_brown} ([Neotoma]{.text-italic}, [FOSSILPOL]{.text-italic})
+- 🌱 [Contemporary vegetation]{.text-highlight-dark_green} ([sPlotOpen]{.text-italic}, [BIEN]{.text-italic})
+- 🌾 [Functional traits]{.text-highlight-teal} ([BIEN]{.text-italic}, [TRY]{.text-italic})
+- 🌍 [Climate & soil data]{.text-highlight-pistachio} ([CHELSA]{.text-italic}, [WoSIS]{.text-italic})  
+:::
+
+::: {.column width="60%"}
+
+```{r}
+#| label: Scheme
+include_local_figure("VegVault/assembly_viz_04.png")
+```
+:::
+
+::::
+
+# Functional Vegetation Paleoecology
+
+:::: {.columns}
+
+::: {.column width="25%"}
+
+```{r}
+#| label: fvp-logo
+include_local_figure("Logos/logo_FVP.png")
+```
+
+:::
+
+::: {.column width="75%" .text-left}
+
+<br>
+
+Using [past vegetation data]{.text-highlight-seal_brown} to anticipate climate impacts
+
+Start up own independent group at Charles University
+
+:::
+
+::::
+
+[PI]{.text-highlight-fulvous} | 2025–2029 
+
+Funded by the [PRIMUS program of Charles University](https://cuni.cz/UKEN-1.html) 
+
+## Laboratory of Quantitative Ecology {.text-center}
+
+:::: {.columns}
+
+::: {.column width="20%"}
+
+<br>
+
+```{r}
+#| label: loqe-logo
+include_local_figure("Logos/LoQE_logo.png")
+```
+
+<br>
+
+```{r}
+#| label: loqe-qr
+qr_loqe <-
+  qrcode::qr_code(
+    "https://bit.ly/CUNI_QuantitativeEcology",
+    ecl = "H"
+  )
+
+qrcode::generate_svg(
+  qrcode = qr_loqe,
+  filename = here::here("Materials/QR/qr_loqe.svg"),
+  foreground = loqe_cols['dark_green'],
+  background = loqe_cols['white']
+)
+
+include_local_figure("QR/qr_loqe.svg")
+```
+
+
+:::
+
+
+::: {.column width="80%"}
+
+```{r}
+#| label: group_photo
+include_local_figure("About/lab_photo_2025.jpg")
+```
+
+
+:::
+
+::::
+
+## Laboratory of Quantitative Ecology 
+
+<br>
+
+:::::: {.columns}
+
+::::: {.column width="50%" .fragment}
+
+:::: {.columns}
+
+#### [PhD Students]{.text-highlight-dark_green}
+
+::: {.column width="40%"}
+
+```{r}
+#| label: Bryan
+include_local_figure("About/Bryan.jpg")
+```
+
+Bryan Novio
+
+:::
+
+::: {.column width="40%"}
+
+```{r}
+#| label: Naty
+include_local_figure("About/Naty.png")
+```
+
+Natalie Hanusova
+
+:::
+
+::::
+
+:::::
+
+::::: {.column width="20%" .fragment}
+
+#### [Technician]{.text-highlight-teal}
+
+```{r}
+#| label: Frieda
+include_local_figure("About/Frieda.jpeg")
+```
+
+Friederika Wolke
+
+:::::
+
+::::: {.column width="20%" .fragment}
+
+#### [Alumni]{.text-highlight-pistachio}
+
+```{r}
+#| label: Marketa
+include_local_figure("About/Marketa.jpeg")
+```
+
+Marketa Tumova
+
+:::::
+
+::::::
+
+::: {.footer}
+
+[bit.ly/CUNI_QuantitativeEcology](https://bit.ly/CUNI_QuantitativeEcology)
+
+:::
+
+<!---PalaeOpen --->
+
+# PalaeOpen
+
+:::: {.columns}
+
+::: {.column width="25%"}
+
+```{r}
+#| label: palaeopen-logo
+include_local_figure("Logos/PalaeOpen_logo.png")
+```
+
+:::
+
+::: {.column width="75%" .text-left}
+
+<br>
+
+Open [Palaeoecological Data]{.text-highlight-seal_brown} 
+
+Organise workshops, training schools, and conferences for non-pollen paleoecologists
+
+:::
+
+::::
+
+[Steering Committee Member]{.text-highlight-pistachio} | 2025-2029 
+
+Now also ambassador of Neotoma database for whole Europe!
+
+Funded by the [COST Action](https://www.cost.eu/actions/CA20129/)
+
+# Open Science & Reproducibility
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="75%" .incremental}
+
+- [Open Science Champion]{.text-highlight-pistachio} at Charles University
+- Teaching [SPROuT course]{.text-highlight-teal} (Science Powered by Reproducibility, Openness and Teamwork) since 2024 at Charles University (2021-2023 at University of Bergen)
+- Making [hands-on workshops]{.text-highlight-dark_green} for (non) academic institutions
+
+:::
+
+::: {.column width="25%"}
+
+```{r}
+#| label: open science champion
+include_local_figure("Printscreens/Open_Science_Champion.png")
+```
+
+:::
+
+::::
+
+# Nerd and Tech stuff
+
+:::: {.columns}
+
+::: {.column width="15%"}
+
+```{r}
+#| label: logos
+include_local_figure("Logos/RRatepol_logo.png")
+include_local_figure("Logos/FOSSILPOL_logo_600ppi.png")
+include_local_figure("Logos/vaultkeepr_logo.png")
+```
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="65%" .incremental}
+
+<br>
+<br>
+
+- Large scale analysis of [big data]{.text-highlight-teal} (eg [reproducible pipelines]{.text-highlight-pistachio})
+- Empowering scientific exploration through [user-friendly tools]{.text-highlight-dark_green}
+   + Making [R packages]{.text-highlight-seal_brown}: {RRatepol}, {FOSSILPOL}, {vaultkeepr}, ...
+- Making website and presentation using [QUARTO]{.text-highlight-fulvous}
+- ... 
+
+:::
+
+::::
+
+# MEMELAND - my role
+
+<br>
+
+::: {.incremental}
+
+- [Data Management advisor]{.text-highlight-teal}
+  + Data Management Plan (DMP), Project Communication Plan (PCP), etc.
+- [Reproducible data analysis]{.text-highlight-pistachio} pipelines
+   + Workflow documentation, version control, etc.
+- Main [data analyst]{.text-highlight-dark_green} (biodiversity dynamics)
+   + This requires the data to be [well managed and documented]{.text-highlight-seal_brown}!
+- webmaster?
+
+:::
+
+<!--- Closing--->
 
 ## {.text-center}
 
@@ -200,25 +963,12 @@ Scientific profile of Ondřej Mottl
 
 ```{r}
 #| label: loqe-qr-end
-qr_loqe <-
-  qrcode::qr_code(
-    "https://bit.ly/CUNI_QuantitativeEcology",
-    ecl = "H"
-  )
-
-qrcode::generate_svg(
-  qrcode = qr_loqe,
-  filename = here::here("Materials/QR/qr_loqe.svg"),
-  foreground = loqe_cols['dark_green'],
-  background = loqe_cols['white']
-)
-
 include_local_figure("QR/qr_loqe.svg")
 ```
 :::
 
 ::: {.column width="60%" .text-left .text-size-body}
-[👤](https://ondrejmottl.github.io/)Ondřej Mottl
+[👤](https://ondrejmottl.github.io/) Ondřej Mottl
 
 [MEMELAND Kick-Off 2025]{.text-highlight-pistachio}
 :::
@@ -226,7 +976,7 @@ include_local_figure("QR/qr_loqe.svg")
 ::: {.column width="18%"}
 
 ```{r}
-#| label: personal sticker
+#| label: personal sticker 2 
 include_local_figure("About/personal_sticker.png")
 ```
 
