@@ -1,9 +1,48 @@
 {
-  "black": "#000000ff",
-  "white": "#ffffffff",
-  "grey": "#808080ff",
-  "byzantium": "#8f286fff",
-  "harvest-gold": "#eca400ff",
-  "persian-green": "#1b998bff",
-  "cerulean": "#006992ff"
+  "primary": {
+    "white": "#F2F4F2",
+    "black": "#1F2937",
+    "dark_green": "#002A28",
+    "teal": "#00857E", 
+    "pistachio": "#87BF79",
+    "fulvous": "#D47F14",
+    "seal_brown": "#641F03"
+  },
+  "ui": {
+    "bodyColor": "black",
+    "bodyBackground": "white",
+    "backgroundColor": "white",
+    "headingColor": "dark_green",
+    "linkColor": "fulvous",
+    "linkHoverColor": "fulvous",
+    "accentColor": "fulvous",
+    "selectionBackground": "pistachio",
+    "selectionColor": "black"
+  },
+  "components": {
+    "codeColor": "black",
+    "codeBackgroundColor": "white",
+    "lightCodeBackground": "white",
+    "codeBlockBackground": "white",
+    "tableHeaderBackground": "dark_green",
+    "tableHeaderColor": "white",
+    "tableBorderColor": "black",
+    "tableStripeBackground": "white",
+    "tableStripeAlternate": "teal",
+    "blockquoteBackground": "white",
+    "blockquoteBorderColor": "dark_green",
+    "blockquoteBackgroundTint": "teal",
+    "shadowBackground": "white"
+  },
+  "utilities": {
+    "contrastColorLight": "black",
+    "contrastColorDark": "white",
+    "utilityDarkGreen": "dark_green",
+    "utilityTeal": "teal",
+    "utilityPistachio": "pistachio",
+    "utilitySealBrown": "seal_brown",
+    "utilityFulvous": "fulvous",
+    "utilityBlack": "black",
+    "utilityWhite": "white"
+  }
 }
