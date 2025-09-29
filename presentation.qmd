@@ -149,6 +149,90 @@ include_local_figure("QR/qr_slides.svg")
 Scan to follow along!
 :::
 
+<!--- Slide 5: Hi, I am Ondra--->
+
+## 🙋Hi! I am Ondřej Mottl {.text-center}
+
+:::: {.columns}
+
+::: {.column width="35%"}
+```{r}
+#| label: personal photo
+include_local_figure("About/head_photo.png")
+```
+
+:::
+
+::: {.column width="65%" .text-left}
+
+<br>
+
+🌿[Assistant Professor]{.text-highlight-dark_green} of [Vegetation Ecology]{.text-highlight-teal} at the [Department of Botany](https://natur.cuni.cz/en/biology/departments-and-work-places/department-of-botany)
+
+🧑‍💻 Head of the [Laboratory of Quantitative Ecology](https://ondrejmottl.github.io/lab/about_the_lab.html)
+
+♻️[Open Science Champion](https://openscience.cuni.cz/OSCIEN-161.html)
+
+🎩Secretary of the [Junior Faculty](https://natur.cuni.cz/en/research/junior-faculty)
+
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width="8%"}
+:::
+
+::: {.column width="60%" .text-left .text-smaller}
+
+📧 Ondrej.mottl(at)gmail.com
+
+🦋 [ondrejmottl.bsky.social](https://bsky.app/profile/ondrejmottl.bsky.social)
+
+🐱 [Github](https://github.com/OndrejMottl)
+
+🆔 [ORCID](https://orcid.org/0000-0002-9796-5081)
+
+🌐 [Personal webpage](https://ondrejmottl.github.io/)
+:::
+
+::: {.column width="8%"}
+:::
+
+
+::: {.column width="22%"}
+
+```{r}
+#| label: linktree QR
+qr_personal_web <-
+  qrcode::qr_code(
+    "https://bit.ly/ondrej_mottl",
+    ecl = "H"
+  )
+
+qrcode::generate_svg(
+  qrcode = qr_personal_web,
+  filename = here::here("Materials/QR/qr_personal_web.svg"),
+  foreground = loqe_cols['black'],
+  background = loqe_cols['white']
+)
+
+include_local_figure("QR/qr_personal_web.svg")
+```
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::::
+
+::: {.footer}
+photo by Vladimír Šigut (CUNI)
+:::
+
+
 <!--- FOCUS --->
 
 ## Research Focus & Tools {.text-center}
